@@ -12,7 +12,7 @@ function sanitizeName(name) {
 	if (!checkIsHttpToken(name)) {
 		throw new TypeError(`${name} is not a legal HTTP header name`);
 	}
-	return name.toLowerCase();
+	return name;
 }
 
 function sanitizeValue(value) {
